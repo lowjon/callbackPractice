@@ -164,8 +164,23 @@ each(names, function(item, indice) {
 
 //code here for getUserById
 
+var getUserById = function(arr, val, cb){
+var user;
+  for (i =0; i < arr.length; i++){
+    if (arr[i].id === val){
+      user = arr[i];
+    }
+
+}
+return cb(user);
+
+
+}
+
 
 //!!! dont change below this!!!
+
+//users is an array of objects that represent different users
 
 var users = [{
     id: '12d',
